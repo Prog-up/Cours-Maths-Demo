@@ -10,7 +10,7 @@ $\begin{aligned}
     \text{Soient }
     &a,a'\in A
     \\
-    &b,b{\in B}
+    &b,b'\in B
     \\
     &\text{tq } a+b=a'+b'
 \end{aligned}
