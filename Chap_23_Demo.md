@@ -4,15 +4,16 @@ Deux sous-espaces vectoriels $A$ et $B$ de $E$ sont en somme directe ssi $A\cap 
 
 **Démo :**
 
-Si $A\cap B=\{O\}$
+$\text{Si }A\cap B=\{O\}$
 
-$\begin{aligned}
+$
+\begin{aligned}
     \text{Soient }
     &a,a'\in A
     \\
     &b,b'\in B
     \\
-    &\text{tq } a+b=a'+b'
+    &\text{tq }a+b=a'+b'
 \end{aligned}
 $
 
@@ -25,11 +26,12 @@ $
 \end{aligned}
 $
 
-Or $a+b=a'+b'$
+$\text{Or }a+b=a'+b'$
 
-Donc $a-a'=b-b'$
+$\text{Donc }a-a'=b-b'$
 
-$\begin{aligned}
+$
+\begin{aligned}
     \text{Mais }
     &a-a'\in A \text{ (sev de } E\text{)}
     \\
@@ -37,9 +39,9 @@ $\begin{aligned}
 \end{aligned}
 $
 
-Donc $a-a'\in A\cap B=\{0\}$
+$\text{Donc }a-a'\in A\cap B=\{0\}$
 
-Donc $a = a'$ et $b=b'$
+$\text{Donc }a = a' et b=b'$
 
 **Réciproque :**
 
@@ -88,9 +90,9 @@ $\begin{aligned}
 \end{aligned}
 $
 
-où $n,p\in\mathbb{N}^*$
+$\text{où }n,p\in\mathbb{N}^*$
 
-Soit $u\in A+B$
+$\text{Soit }u\in A+B$
 
 $
 \begin{aligned}
@@ -101,7 +103,7 @@ $
 \end{aligned}
 $
 
-tq $u=a+b$
+$\text{tq }u=a+b$
 
 $
 \begin{aligned}
@@ -121,13 +123,13 @@ $
 \end{aligned}
 $
 
-et $a+b=\sum_{i=1}^n \lambda_i x_i+\sum_{j=1}^n \mu_j y_j\in vect(\mathcal F\cup\mathcal G)$
+$\text{et }a+b=\sum_{i=1}^n \lambda_i x_i+\sum_{j=1}^n \mu_j y_j\in vect(\mathcal F\cup\mathcal G)$
 
-Donc $A+B\subset vect(\mathcal F\cup\mathcal G)$
+$\text{Donc }A+B\subset vect(\mathcal F\cup\mathcal G)$
 
-Mais $\mathcal F\cup\mathcal G\subset A+B$
+$\text{Mais }\mathcal F\cup\mathcal G\subset A+B$
 
-Donc $vect(\mathcal F\cup\mathcal G)\in A+B$
+$\text{Donc }vect(\mathcal F\cup\mathcal G)\in A+B$
 
 (car $A$ et $B$ est un sev de $E$)
 
