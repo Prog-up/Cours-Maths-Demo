@@ -1,6 +1,9 @@
 # Chapitre 23 : Espaces vectoriels
 ## Prop 5.4 (Caractérisation d'une somme directe)
-Deux sous-espaces vectoriels $A$ et $B$ de $E$ sont en somme directe ssi $A\cap B=\{0\}$.
+
+Soit $A$ et $B$ deux sous-espaces vectoriels de $E$.
+
+Alors $A$ et $B$ sont en somme directe ssi $A\cap B=\{0\}$.
 
 **Démo :**
 
