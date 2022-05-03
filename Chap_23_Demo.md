@@ -7,7 +7,7 @@ Alors $A$ et $B$ sont en somme directe ssi $A\cap B=\{0\}$.
 
 **Démonstration :**
 
-$\text{Si }A\cap B=\{O\}$
+$\text{Si }A\cap B=\{0\}$
 
 $
 \begin{aligned}

@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+
+\usepackage[textheight=700pt, textwidth=500pt]{geometry}
+
+\newcommand{\ind}[1][20pt]{\advance\leftskip + #1}
+\newcommand{\deind}[1][20pt]{\advance\leftskip - #1}
+\newenvironment{indt}[2][20pt]{#2 \par \ind[#1]}{\par \deind}
+
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{stmaryrd}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\pagenumbering{gobble}
+
+\begin{document}
+    Cours : 1.8 - 1.9 - 3.3. - 3.4 - 4.4. - 5.8
+
+    Exercices : 8 - 10 - 16 - 18
+
+    \begin{indt}{\section*{Chapitre 27 : Matrices}}
+        \begin{indt}{\subsection*{Def 1.1 : Matrice des composantes}}
+            $\displaystyle x=\sum_{i=1}^p x_i e_i$
+
+            $\mathrm{Mat_{B_E}}(x)=(x_{i,1})_{1\le i\le p}$
+        \end{indt}
+
+        \begin{indt}{\subsection*{Def 1.4 : Matrice d'une application linéaire}}
+            $\displaystyle \mathrm{u}(e_j)=\sum_{i=1}^n a_{i,j} f_i$
+        \end{indt}
+
+        \begin{indt}{\subsection*{Prop 1.8}}
+            $\mathrm{Mat_{B_F}}(y)=\mathrm{Mat_{B_E,B_F}}(u)\times\mathrm{Mat_{B_E}}(x)$
+
+            $\Rightarrow Y=AX$
+        \end{indt}
+
+        \begin{indt}{\subsection*{Prop 1.9}}
+            $\mathrm{Mat_{B_E,B_G}}(v\circ u)=\mathrm{Mat_{B_F,B_G}}(v)\times\mathrm{Mat_{B_E,B_F}}(u)$
+        \end{indt} 
+
+        \begin{indt}{\subsection*{Prop 3.3}}
+            $\mathrm{Mat_{B}}(x)=\mathrm{P_{B,B'}}\times\mathrm{Mat_{B'}}(x)$
+
+            $\Rightarrow X=\mathrm{P_{B,B'}}X'$
+        \end{indt} 
+
+        \begin{indt}{\subsection*{Prop 3.4}}
+            $\mathrm{Mat_{B_E',B_F'}}(u)=\mathrm{P_{B_F,B_F'}}\times\mathrm{Mat_{B_E,B_F}}(u)\times\mathrm{P_{B_E,B_E'}}$
+
+            $\Rightarrow A'=Q^{-1}AP$
+
+            $\mathrm{Mat_{B_E',B_E'}}(u)=\mathrm{P_{B_E,B_E'}}\times\mathrm{Mat_{B_E,B_E}}(u)\times\mathrm{P_{B_E,B_E'}}$
+
+            $\Rightarrow A'=P^{-1}AP$
+        \end{indt}
+    \end{indt}
+\end{document}

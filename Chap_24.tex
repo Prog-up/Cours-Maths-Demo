@@ -1,0 +1,197 @@
+\documentclass[12pt]{article}
+
+\usepackage[textheight=700pt, textwidth=500pt]{geometry}
+
+\newcommand{\ind}[1][20pt]{\advance\leftskip + #1}
+\newcommand{\deind}[1][20pt]{\advance\leftskip - #1}
+\newenvironment{indt}[2][20pt]{#2 \par \ind[#1]}{\par \deind}
+
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{stmaryrd}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\pagenumbering{gobble}
+
+\begin{document}
+  \begin{indt}{\section*{Chapitre 24}}
+    \begin{indt}{\subsection*{Prop 2.3}}
+    
+    
+      Soit $f\in\mathcal{L}(E,F)$. Alors :
+      
+      \vspace{-10pt}
+      
+      \begin{enumerate}[leftmargin=2cm,rightmargin=2cm]
+      \item $\mathrm{Ker}(f)$ est un sev de $E$;
+      \item $\mathrm{Im}(f)$ est un sev de $F$.
+      \end{enumerate}
+      
+      %\vspace{-10pt}
+      
+      \textbf{Démo :}
+      
+      %\vspace{-10pt}
+      
+      \begin{enumerate}[leftmargin=2cm,rightmargin=2cm]
+      \item On a $0_E\in\mathrm{Ker}(f)$
+      
+      Donc $\mathrm{Ker}(f)\not =\emptyset$
+      
+      $\begin{array}{ll}
+        \text{Si } & x,x'\in Kef(f)
+        \\
+        & \lambda, \lambda'\in K
+      \end{array}$
+      
+      $\begin{array}{lll}
+        \text{Alors }f(\lambda x+\lambda' x') & =\lambda f(x)+\lambda' f(x')
+        \\
+        & =\lambda 0 +\lambda' 0
+        \\
+        & =0
+      \end{array}$
+      
+      Donc $\lambda x +\lambda' x'\in\mathrm{Ker}(f)$
+      
+      Donc $\mathrm{Ker}(f)$ est un sev de E.
+      
+      \item On a $0_F\in\mathrm{Im}(f)$
+      
+      Donc $\mathrm{Im}(f)\not =\emptyset$
+      
+      $\begin{array}{lll}
+        \text{Soient} & y,y'\in\mathrm{Im}(f)
+        \\
+        & \lambda, \lambda'\in K
+        \\
+        & \begin{array}{ll}
+          x,x'\in\mathrm{Ker}(f) \text{ tq} & y=f(x)
+          \\
+          & y'=f(x')
+        \end{array}
+
+      \end{array}$
+      
+      $\begin{array}{lll}
+        \text{Alors }\lambda y+\lambda' y' & =\lambda f(x)+\lambda' f(x')
+        \\
+        & =f(\lambda x+\lambda' x')\in \mathrm{Im}(f)
+      \end{array}$
+      
+      Donc $\mathrm{Im}(f)$ est un sev de F.
+      \end{enumerate}
+ 
+    \end{indt}
+
+    \newpage
+ 
+    \begin{indt}{\subsection*{Théo 2.4}}
+
+      Soit $f\in\mathcal{L}(E,F)$. Alors :
+      
+      f injective $\Longleftrightarrow\mathrm{Ker}(f)=\{0_E\}$
+
+      et
+
+      f surjective $\Longleftrightarrow\mathrm{Im}(f)=F$
+
+      \vspace{10pt}
+      
+      \textbf{Démo :}
+
+      \vspace{10pt}
+
+      \underline{f injective $\Longleftrightarrow\mathrm{Ker}(f)=\{0_E\}$}
+
+      Si $\mathrm{Ker}(f)=\{0_E\}$
+
+      Soient $x,x'\in E$ tq $f(x)-f(x')$
+
+      Mque $x=x'$
+
+      On a $f(x)-f(x')=0$
+
+      Donc $f(x-x')=0$
+
+      Donc $x-x'\in\mathrm{Ker}(f)=\{0\}$
+
+      Donc $x-x'=0$
+
+      \vspace{10pt}
+
+      \textbf{Réciproque :}
+
+      \vspace{10pt}
+
+      Si $f$ est injective
+
+      On sait que $0\in\mathrm{Ker}(f)$ (car $f$ est linéaire)
+
+      Mais si $x\in\mathrm{Ker}(f)$, alors $f(x)=0=f(0)$
+
+      Par injectivité, $x=0$ et $\mathrm{Ker}(f)=\{0\}$
+
+      \vspace{10pt}
+
+      \underline{f surjective $\Longleftrightarrow\mathrm{Im}(f)=F$}
+
+      C'est général, rien à voir avec l'algé linéaire.
+
+    \end{indt}
+
+    \newpage
+
+    \begin{indt}{\subsection*{Prop 2.6}}
+
+      Soit $f\in\mathcal{L}(E)$. Alors $\mathrm{Im} (f^2)\subset\mathrm{Im} (f)$
+      
+      $\begin{array}{ll}
+        \text{Alors } & \mathrm{Im}(f^2)\subset\mathrm{Im}(f)
+        \\
+        & \mathrm{Ker}(f)\subset\mathrm{Ker}(f^2)
+      \end{array}$ 
+      où $f^2=f\circ f$
+
+      \vspace{10pt}
+
+      \textbf{Démo :}
+
+      \vspace{10pt}
+
+      \underline{$\mathrm{Im}(f^2)\subset\mathrm{Im}(f)$}
+
+      Soit $y\in\mathrm{Im}(f^2)$
+        
+      $\begin{array}{ll}
+      \text{Alors }y & =f^2(x)
+      \\
+      & =f(f(x))
+      \end{array}$
+      où $x\in E$
+
+      Donc $y=\mathrm{Im}(f)$
+
+      \vspace{10pt}
+
+      \underline{$\mathrm{Ker}(f)\subset\mathrm{Ker}(f^2)$}
+
+      Soit $x\in\mathrm{Ker}(f)$
+
+      $\begin{array}{lll}
+        \text{Alors } f^2 & =f(f(x))
+        \\
+        & =f(0)
+        \\
+        & =0
+      \end{array}$
+      où f linéaire
+
+      Donc $x\in\mathrm{Ker}(f^2)$
+
+    \end{indt}
+  \end{indt}
+\end{document}
